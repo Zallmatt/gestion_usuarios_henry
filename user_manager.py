@@ -1,19 +1,21 @@
-from utils import validate_email, get_non_empty_input
+from utils import validate_email, name_validation, password_validation
 
 def register_user():
     print("\n--- Registro de usuario ---")
-    name = get_non_empty_input("Nombre: ")
-    email = get_non_empty_input("Email: ", validate_email)
-    password = get_non_empty_input("Contraseña: ")
+    name = name_validation()
+    email = validate_email()
+    password = password_validation()
     return {"name": name, "email": email, "password": password}
 
 def list_users(users):
     print("\n--- Lista de usuarios ---")
     for idx, user in enumerate(users, 1):
+        #Recorremos la lista 'users' y enumeramos cada usuario con idx arrancando desde 1
         print(f"{idx}. {user['name']} - {user['email']}")
 
 def search_user(users):
     name = input("Nombre a buscar: ").lower()
+    # Se crea una lista 'found' con los usuarios cuyo nombre contiene el texto buscado
     found = [u for u in users if name in u["name"].lower()]
     if found:
         for user in found:

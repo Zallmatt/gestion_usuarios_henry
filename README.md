@@ -78,6 +78,20 @@ python main.py
 
 ---
 
+## 🧪 Tests unitarios
+
+El proyecto incluye pruebas unitarias para validar funciones clave del sistema:
+
+- ✅ Validación de emails (`is_valid_email`)
+- ✅ Validación de contraseñas (`is_valid_password`)
+- ✅ Simulación de búsquedas de usuarios (`search_user`)
+
+### ▶ Cómo ejecutar los tests
+
+Con el entorno virtual activo, ejecutá en la terminal:
+
+```bash
+python test_user_manager.py
 
 ## 📩 Contacto
 

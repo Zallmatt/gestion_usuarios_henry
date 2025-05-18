@@ -26,15 +26,18 @@ Este proyecto es una práctica de programación en Python que simula un sistema 
 ---
 
 ## 🗂️ Estructura del proyecto
-├── main.py # Menú principal
-├── user_manager.py # Lógica de usuarios
-├── file_manager.py # Guardado y carga de datos
-├── utils.py # Validaciones y funciones auxiliares
-├── users.json # Archivo con usuarios registrados
-├── .env # Variables de entorno
-├── requirements.txt # Dependencias del proyecto
+
+```
+├── main.py             # Menú principal
+├── user_manager.py     # Lógica de usuarios
+├── file_manager.py     # Guardado y carga de datos
+├── utils.py            # Validaciones y funciones auxiliares
+├── users.json          # Archivo con usuarios registrados
+├── .env                # Variables de entorno
+├── requirements.txt    # Dependencias del proyecto
 ├── .gitignore
 └── README.md
+```
 
 ---
 
@@ -43,17 +46,41 @@ Este proyecto es una práctica de programación en Python que simula un sistema 
 1. **Clonar el repositorio**
 ```bash
 git clone https://github.com/Zallmatt/gestion_usuarios_henry.git
+cd gestion_usuarios_henry
+```
 
-2. **Crear y activar el entorno virtual**
-
+2. **Crear el entorno virtual**
+```bash
 python -m venv venv
-# Windows
+```
+
+3. **Activar el entorno virtual**
+
+- En Windows:
+```bash
 venv\Scripts\activate
-# macOS/Linux
+```
+
+- En macOS/Linux:
+```bash
 source venv/bin/activate
-#Instalar dependencias
+```
+
+4. **Instalar las dependencias**
+```bash
 pip install -r requirements.txt
-#Ejecutar el programa
+```
+
+5. **Ejecutar la aplicación**
+```bash
 python main.py
+```
+
+---
 
 
+## 📩 Contacto
+
+Desarrollado por [Matías Zalazar]  
+📧 matizalazar2001@gmail.com  
+🔗 [GitHub/Zallmatt](https://github.com/Zallmatt)

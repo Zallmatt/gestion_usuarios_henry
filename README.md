@@ -92,6 +92,7 @@ Con el entorno virtual activo, ejecutá en la terminal:
 
 ```bash
 python test_user_manager.py
+```
 
 ## 📩 Contacto
 

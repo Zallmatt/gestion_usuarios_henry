@@ -1,5 +1,5 @@
-from user_manager import register_user, list_users, search_user, delete_user
-from file_manager import load_users, save_users
+from managers.user_manager import register_user, list_users, search_user, delete_user
+from managers.file_manager import load_users, save_users
 from dotenv import load_dotenv
 from colorama import init, Fore, Style
 import os
@@ -17,7 +17,7 @@ def main_menu():
     while True:
         print(Fore.CYAN + Style.BRIGHT + "="*40)
         print("        SISTEMA DE GESTIÓN DE USUARIOS        ")
-        print("="*40 + Style.RESET_ALL)
+        print(Fore.CYAN + Style.BRIGHT + "="*40 + Style.RESET_ALL)
 
         print(Fore.YELLOW + "📋 Menú principal")
         print("1️⃣  Registrar usuario")

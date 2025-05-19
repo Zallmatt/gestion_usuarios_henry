@@ -1,16 +1,11 @@
 import unittest
-import re
+from utils.validators import is_valid_email, is_valid_password
 
-# Funciones de validación para testeo
-def is_valid_email(email):
-    return re.match(r"[^@]+@[^@]+\.[^@]+", email)
-
-def is_valid_password(password):
-    return (
-        len(password) >= 8 and
-        any(char.isdigit() for char in password) and
-        any(char.isalpha() for char in password)
-    )
+'''
+Para testear debe hacer
+1- cd src
+2- python -m tests.test_user_manager
+'''
 
 class TestUserManager(unittest.TestCase):
 
